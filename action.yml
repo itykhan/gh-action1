@@ -1,0 +1,8 @@
+name: 'Keywird Releaser 9000'
+description: 'Create releases based on a keyword'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'gift'
+  color: 'blue'
