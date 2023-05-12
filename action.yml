@@ -1,5 +1,5 @@
-name: 'Keywird Releaser 9000'
-description: 'Create releases based on a keyword'
+name: 'CB CD/RO Pipeline Runner 05122023'
+description: 'Run CB CD/RO Pipeline'
 runs:
   using: 'docker'
   image: 'Dockerfile'
