@@ -1,14 +1,6 @@
-FROM alpine
-
-RUN apk add --no-cache \
-        bash \
-        httpie \
-        jq \
-        which bash && \
-        which http && \
-        which jq
+FROM cloudbees/cbflow-tools:2023.04.0.162443_3.2.41_20230407
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
-COPY sample_push_event.json /sample_push_event.json
 
 ENTRYPOINT ["entrypoint.sh"]
+
