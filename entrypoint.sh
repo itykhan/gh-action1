@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export COMMANDER_SESSIONFILE=/github/workspace/.ecsession
+export COMMANDER_SESSIONFILE=/tmp/.ecsession
 
 echo $COMMANDER_SESSIONFILE
 echo 'test'>/tmp/test.txt
