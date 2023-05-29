@@ -3,6 +3,14 @@ description: 'Run CB CD/RO Pipeline'
 runs:
   using: 'docker'
   image: 'Dockerfile'
+inputs:
+  pipeline-project-name:
+    description: 'Name of a project containing a pipeline'
+    required: true 
+    default: '1'
+  pipeline-name:
+    description: 'Name of a pipeline'
+    required: true  
 branding:
   icon: 'gift'
   color: 'blue'
