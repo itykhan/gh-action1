@@ -8,4 +8,4 @@ pwd
 echo $USER
 
 ectool --server $CDRO_HOST login $CDRO_USER $CDRO_PASSWORD
-ectool runPipeline $INPUT_PIPELINE_PROJECT_NAME $INPUT_PIPELINE_NAME --actualParameter repo=$CDRO_REPO
+ectool runPipeline $INPUT_PIPELINE-PROJECT-NAME $INPUT_PIPELINE-NAME --actualParameter repo=$CDRO_REPO
