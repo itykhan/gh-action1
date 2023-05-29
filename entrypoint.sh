@@ -3,9 +3,9 @@
 export COMMANDER_SESSIONFILE=/tmp/.ecsession
 
 echo $COMMANDER_SESSIONFILE
-echo 'test'>/tmp/test.txt
+
 pwd
 echo $USER
 
 ectool --server $CDRO_HOST login $CDRO_USER $CDRO_PASSWORD
-ectool runPipeline it-test gha-test --actualParameter repo=$CDRO_REPO
+ectool runPipeline $INPUT_PIPELINE_PROJECT_NAME $INPUT_PIPELINE_NAME --actualParameter repo=$CDRO_REPO
