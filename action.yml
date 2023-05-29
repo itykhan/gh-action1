@@ -4,13 +4,15 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 inputs:
-  pipelineprojectname:
+  pipelineProjectName:
     description: 'Name of a project containing a pipeline'
     required: true 
-    default: '1'
-  pipelinename:
+  pipelineName:
     description: 'Name of a pipeline'
     required: true  
+  actualParameters:
+    description: 'Actual parameters in formal parameterName1=value1 parameterName2=value2 ...'
+    required: false     
 branding:
   icon: 'gift'
   color: 'blue'
