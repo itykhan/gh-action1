@@ -4,11 +4,11 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
 inputs:
-  pipeline-project-name:
+  pipelineprojectname:
     description: 'Name of a project containing a pipeline'
     required: true 
     default: '1'
-  pipeline-name:
+  pipelinename:
     description: 'Name of a pipeline'
     required: true  
 branding:
